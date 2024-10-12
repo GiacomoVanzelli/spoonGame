@@ -1,0 +1,145 @@
+/* FoodQuizGame.css */
+
+.food-quiz-game {
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  .food-quiz-game h1 { 
+    margin-bottom: 30px; 
+    margin-top: 10px;
+  }
+  
+  .question-text {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .answer-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .answer-button {
+    background-color: #FFD700;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 200px;
+    transition: background-color 0.3s;
+  }
+  
+  .answer-button:hover {
+    background-color: #FFC800;
+  }
+  
+  .answer-button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .answer-button.selected { 
+    background-color: #FF0000;
+    color: white;
+  }
+  
+  .answer-button.correct {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .feedback { 
+    margin-top: 20px; 
+  }
+  
+  .game-button {
+    background-color: #4B0082;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .game-button:hover {
+    background-color: #6A5ACD;
+  }
+  
+  .correct-counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .lives-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+  }
+  
+  .timer {
+    margin-bottom: 20px;
+  }
+  
+  .level-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .level-button {
+    background-color: #4B0082;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .level-button:hover {
+    background-color: #6A5ACD;
+  }
+  
+  .level-button:disabled {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+  }
+  
+  .reward-info {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
